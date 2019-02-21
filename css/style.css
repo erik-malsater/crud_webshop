@@ -1,0 +1,237 @@
+body {
+    font-family: helvetica;
+}
+
+#indexContainer {
+    margin: 20vh auto 0 auto;
+    max-width: 500px;
+}
+
+.formSelectBox {
+    display: flex;
+    justify-content: center;
+}
+
+.formSelectBox select {
+    height: 30px;
+    width: 120px;
+    font-size: 1.1em;
+    margin-top: 10px auto 0 auto;
+    margin: 0 auto;
+}
+
+.sendFormButtonBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.sendFormButtonBox input {
+
+    background-color: #FFD700;
+    border: none;
+    box-shadow: 1px 1px 1px;
+    border-radius: 20px;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.05em;
+}
+
+.sendFormButtonBox input:focus {
+    outline: none;
+}
+
+.sendFormButtonBox input:active {
+    background-color: #E6C100;
+    box-shadow: 0px 0px;
+    transform: translateY(2px);
+}
+
+.whiteSmallPrint{
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.whiteSmallPrint a{
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    font-weight: 200;
+    font-family: permanent marker;
+    margin-top: 0;
+}
+
+.container {
+    background-color: #2A5354;
+    padding: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px;
+}
+
+#checkoutContainer {
+    max-width: 500px;
+}
+
+.formRow {
+    display: flex;
+    margin: 10px auto 0px auto;
+    max-width: 500px;
+    justify-content: center;
+}
+
+.formRow input {
+    height: 20px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.hiddenFormLabel {
+    display: none;
+}
+
+
+.formWarning {
+    max-width: 500px;
+    margin: 2px auto 0 auto;
+    color: white;
+    font-size: 0.9em;
+}
+
+
+.productContainer {
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.productCard {
+    display: flex;
+}
+
+.productDataColumn {
+    flex: 1;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.productDataColumn input,
+.productDataColumn label,
+.productDataColumn p {
+    margin-top: 30px;
+}
+
+
+.productDataColumn > input{
+    width: 60px;
+}
+
+.productDataColumn .updatedAddToCart{
+    margin: 5px 0 0 35px;
+    padding: 0;
+    width: 0;
+    height: 0;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+.productDataColumn.removeFromCartButtonBox input{
+    margin-top: 17%;
+}
+
+.productImageFrame {
+    height: 110px;
+    width: 110px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    margin: 0 auto;
+
+}
+
+.productImage {
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    border-top: 1px solid darkgrey;
+}
+
+.buttonContainerUnderProducts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personalDataBox {
+    width: 50%;
+    margin: 10px auto 30px auto;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 15px 10px 15px 18%;
+    box-shadow: 1px 1px 1px grey;
+}
+
+#confirmContainer {
+    margin: 30vh auto 0 auto;
+    max-width: 500px;
+}
+
+
+@media only screen and (max-width : 500px) {
+
+    #indexContainer {
+        margin-top: 0vh;
+    }
+
+    .formRow input {
+        height: 15px;
+        font-size: 0.8em;
+    }
+
+    .formWarning {
+        font-size: 0.7em;
+    }
+
+    .productCard {
+        font-size: 0.7em;
+    }
+
+    .productImageFrame {
+        height: 70px;
+        width: 70px;
+    }
+
+    .sendFormButtonBox input {
+        padding: 8px 16px;
+        font-size: 0.8em;
+    }
+
+    #checkoutContainer {
+        margin-top: 0vh;
+    }
+
+    .personalDataBox {
+        font-size: 0.7em;
+        padding-left: 12%;
+        padding-right: 5px;
+    }
+
+    .productDataColumn .updatedAddToCart{
+        font-size: 0.65em;
+        margin-top: 0;
+    }
+
+}
